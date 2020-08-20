@@ -6,7 +6,7 @@ We evaluated our branching inference approach on three real datasets.
 
 1. Triple Negative Breast Cancer ([TNBC](https://drive.google.com/drive/folders/1MVSuXJ64lYlzLjW6LIHBxG2s1vzqU35-?usp=sharing)): this dataset includes 16 single cells and 18 mutations [1].
 2.   Acute  Lymphoblastic  Leukemia  ([ALL](https://drive.google.com/drive/folders/1sZfVxRnBKyNLoOWReUG2CeO1wF819UbO?usp=sharing))  Patient  6: this dataset consists of 146 single cells and 10 mutations [2].
-3. Human Colorectal Cancer ([CRC](https://drive.google.com/drive/folders/1RMP104_HobO0ZhpxvYeCrW42mZyRfquz?usp=sharing)) Patient 1: this dataset includes single cells from two sites of the patient body; 133 single cells from colon as primary tumor site and 45 single cells from liver as the tumor metastatic site. We remove duplicated cells in this dataset before feeding it to our neural network. After duplication removal, the number of unique cells are 36 and 30 from primary and metastatic sites, respectively [3].
+3. Human Colorectal Cancer ([CRC](https://drive.google.com/drive/folders/1RMP104_HobO0ZhpxvYeCrW42mZyRfquz?usp=sharing)) Patient 1: this dataset includes single cells from two sites of the patient body; 133 single cells from colon as primary tumor site and 45 single cells from liver as the tumor metastatic site. The number of mutations in this dataset is 16. We remove the cells in this dataset that carry none of these 16 mutations before feeding it to our network. After removing cells with zero profile, the number of cells are 40 and 32 from primary and metastatic sites, respectively [3].
 
 ## Simulated datasets
 
